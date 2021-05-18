@@ -30,7 +30,7 @@ const ProfileInfo = (props) => {
                 </ul>
             </div>
             <div className={s.lookingForAJob}>
-                <div>Ищу работу: {props.profile.lookingForAJob ? <span>&#9745;</span> : <span>&#9746;</span>}</div>
+                <div>Ищу работу: {props.profile.lookingForAJob ? <span>Да</span> : <span>Нет</span>}</div>
                 <div>Почему ищу работу: {props.profile.lookingForAJobDescription}</div>
             </div>
             <div className={s.fullName}>
