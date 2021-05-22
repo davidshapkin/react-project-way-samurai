@@ -10,17 +10,19 @@ import HeaderContainer from "./components/Header/HeaderContainer";
 const App = () => {
     return (
             <div className='app-wrapper'>
-                <HeaderContainer/>
-                <Navbar/>
+                <HeaderContainer />
+                <Navbar />
                 <div className='app-wrapper-content'>
                     <Route path='/dialogs'
-                           render={() => <DialogsContainer/>}/>
+                           render={ () => <DialogsContainer /> }/>
 
                     <Route path='/profile/:userId?'
-                           render={() => <ProfileContainer/>}/>
+                           render={ () => <ProfileContainer /> }/>
 
                     <Route path='/users'
-                           render={() => <UsersContainer/>}/>
+                           render={ () => <UsersContainer /> }/>
+
+
                 </div>
             </div>
         )
